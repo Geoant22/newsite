@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav main"
+    "aside main"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 200px 1fr;
+  height: 100vh;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction:row;
+  width: 400px;;
+  height: 400px;
+  justify-content:space-evenly;
+  align-items:center;;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  }
+.flex > * {
+  background-color: rgb(229, 255, 0);
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 2rem;
+}
+  
+header, nav, aside, main, footer {
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+
+  
+  
+}
+
+
+main{
+ 
+  background-size: cover;
+  
+ 
+}
+aside{
+  background-color: #000000;
+
+    
+}
+
+header {
+  text-align: center; 
+  background-size:cover;
+  font-family:cursive;
+  font-size:xx-large;
+  color:yellow;
+  background-color: black;
+  
+}
+
+
+nav {
+  background-color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  
+  
+  
+}
+
+nav ul {
+  list-style-type: none;
+ 
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  padding: 1em;
+
+  
+  
+}
+
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  
+}
+
+nav ul a {
+  text-decoration: none;
+  color: rgb(249, 253, 0);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  padding: 8px 12px;
+  border-radius: 5px;
+  
+}
+
+nav ul a:hover {
+  color: #fff; /* Change the color to your preferred hover color */
+  background-color: white;
+  
+}
+
+
+
+
+
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Style the form inside the center div */
+.center form {
+  text-align: center;
+}
+
+.center form input[type="text"],
+.center form input[type="password"],
+.center form input[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.submenu {
+  background-color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  
+}
+
+
+.submenu ul li {
+  list-style-type: none;
+  text-align: center;
+  display:flex;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.submenu ul a {
+  text-decoration: none;
+  color: rgb(249, 253, 0);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.submenu ul a:hover {
+  color: #fff; /* Change the color to your preferred hover color */
+  background-color: white;
+}
+
+.submenu1 {
+  background-color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  
+}
+
+
+.submenu1 ul li {
+  list-style-type: none;
+  text-align: center;
+  display:flex;
+ 
+
+}
+
+.submenu1 ul a {
+  text-decoration: none;
+  color: rgb(249, 253, 0);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.submenu1 ul a:hover {
+  color: #fff; /* Change the color to your preferred hover color */
+  background-color: white;
+}
+
+.float {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  background-image:url('utero.jpg');
+  background-size: cover;
+  clear:left;
+}
+  
+.float1 {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  background-image: url('bleach.webp');
+  background-size: cover;
+  clear:left;
+}
+
+.float2 {
+  
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  background-image: url('withthelightsout.jpg');
+  background-size: cover;
+  clear:left;
+}
+  
+.submenu2 {
+  background-color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  
+}
+
+
+.submenu2 ul li {
+  list-style-type: none;
+  text-align: center;
+  display:flex;
+ 
+
+}
+
+.submenu2 ul a {
+  text-decoration: none;
+  color: rgb(249, 253, 0);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.submenu2 ul a:hover {
+  color: #fff; /* Change the color to your preferred hover color */
+  background-color: white;
+}
